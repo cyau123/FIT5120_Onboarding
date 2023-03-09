@@ -1,0 +1,16 @@
+﻿@model FIT5120_Onboarding.Models.AddressQuery
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Subscribe", "AddressQuery", FormMethod.Post))
+{   
+    <p>Find your next bin collection date</p>
+    <p>Enter your address:</p>
+    @Html.TextBoxFor(model => model.AddressEntered)
+    @Html.ValidationMessageFor(model => model.AddressEntered)
+    <button type="submit">Search</button><br />
+    <p>Next landfill waste collection:</p>@Html.DisplayFor(model => model.NextWasteDate)<br />
+    <p>Next recycling collection:</p>@Html.DisplayFor(model => model.NextRecycleDate)<br />
+    <p>Next food and garden waste collection:</p>@Html.DisplayFor(model => model.NextGreenDate)
+}
