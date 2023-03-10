@@ -49,14 +49,15 @@ def create_table(server,
     
     print("Pushed table")
 
-list(map(lambda df:
+list(map(lambda df, name:
     create_table(server = 'ta5.cs9naymhw4no.ap-southeast-2.rds.amazonaws.com;',
              database = 'ONBOARDING',
              user = 'fit5120ta5',
              pwd = 'ta5workmail123',
              df = df,
-             name_table = 'US_2_1'),
-    [df_userstory1("us_2_1.xlsx"), df_userstory2("us_2_2.csv")]
+             name_table = name),
+    [df_userstory1("us_2_1.xlsx"), df_userstory2("us_2_2.csv")],
+    ["US_2_1", "US_2_2"]
     ))
 
 
