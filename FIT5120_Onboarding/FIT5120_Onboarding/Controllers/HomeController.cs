@@ -25,9 +25,6 @@ namespace FIT5120_Onboarding.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
-
-        
+        }        
     }
-
 }
