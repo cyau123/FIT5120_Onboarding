@@ -14,6 +14,8 @@ namespace FIT5120_Onboarding.Models
 
         public virtual DbSet<Schedule> Schedules { get; set; }
 
+        public virtual DbSet<Garbage> Garbages { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

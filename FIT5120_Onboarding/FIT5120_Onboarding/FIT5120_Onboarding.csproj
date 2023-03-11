@@ -172,15 +172,19 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddressQueryController.cs" />
+    <Compile Include="Controllers\GarbageQueryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SchedulesController.cs" />
+    <Compile Include="Controllers\WasteManagementGuideController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AddressQuery.cs" />
     <Compile Include="Models\FIT5120_Models.cs" />
+    <Compile Include="Models\Garbage.cs" />
+    <Compile Include="Models\GarbageQuery.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Schedule.cs" />
@@ -200,6 +204,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\green bin.JPG" />
+    <Content Include="Images\logo.JPG" />
+    <Content Include="Images\put garbage.JPG" />
+    <Content Include="Images\red bin.JPG" />
+    <Content Include="Images\what-goes-in-waste-bin1.jpg" />
+    <Content Include="Images\what-goes-in-waste-bin2.jpg" />
+    <Content Include="Images\what-goes-in-waste-bin3.jpg" />
+    <Content Include="Images\yellow bin.JPG" />
+    <Content Include="Images\—Pngtree—beautiful hand-painted green garbage collection_1637571.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -253,6 +266,11 @@
     <Content Include="Views\Schedules\Edit.cshtml" />
     <Content Include="Views\Schedules\Index.cshtml" />
     <Content Include="Views\AddressQuery\Index.cshtml" />
+    <Content Include="Views\GarbageQuery\Index.cshtml" />
+    <Content Include="Views\WasteManagementGuide\RedBin.cshtml" />
+    <Content Include="Views\WasteManagementGuide\YellowBin.cshtml" />
+    <Content Include="Views\WasteManagementGuide\GreenBin.cshtml" />
+    <Content Include="Views\WasteManagementGuide\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
