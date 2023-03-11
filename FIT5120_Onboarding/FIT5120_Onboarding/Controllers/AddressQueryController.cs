@@ -21,8 +21,14 @@ namespace FIT5120_Onboarding.Controllers
         {
             if (ModelState.IsValid)
             {
-                Schedule schedule = db.Schedules.Find(1);
-                if (model.AddressEntered.Equals(schedule.Address))
+                string streetName = model.AddressEntered;
+                var schedule = db.Schedules
+                              .Where(s => s.Address == streetName)
+                              .FirstOrDefault<Schedule>();
+
+
+                //Schedule schedule = db.Schedules.Find(1);
+                if (schedule != null)
                 {
                     string NextWaste = GetNextFornightly(schedule.NextWaste);
                     string NextRecycle = GetNextFornightly(schedule.NextRecycle);
@@ -37,7 +43,7 @@ namespace FIT5120_Onboarding.Controllers
                     model.NextWasteDate = "Address not found";
                     model.NextRecycleDate = "Address not found";
                     model.NextGreenDate = "Address not found";
-                  
+
                 }
             }
 
