@@ -199,11 +199,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\IndexStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\green bin.JPG" />
+    <Content Include="Images\homepage.png" />
     <Content Include="Images\logo.JPG" />
     <Content Include="Images\put garbage.JPG" />
     <Content Include="Images\red bin.JPG" />
