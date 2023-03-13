@@ -205,11 +205,13 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\green bin.JPG" />
+    <Content Include="Images\green_small.jpg" />
     <Content Include="Images\homepage.png" />
     <Content Include="Images\logo.JPG" />
     <Content Include="Images\poeple_rubbish.jpg" />
     <Content Include="Images\put garbage.JPG" />
     <Content Include="Images\red bin.JPG" />
+    <Content Include="Images\red_small.jpg" />
     <Content Include="Images\what-goes-in-waste-bin1.jpg" />
     <Content Include="Images\what-goes-in-waste-bin2.jpg" />
     <Content Include="Images\what-goes-in-waste-bin3.jpg" />
@@ -217,6 +219,7 @@
     <Content Include="Images\what_goes_into_red.jpg" />
     <Content Include="Images\what_goes_into_yellow.jpg" />
     <Content Include="Images\yellow bin.JPG" />
+    <Content Include="Images\yellow_small.jpg" />
     <Content Include="Images\—Pngtree—beautiful hand-painted green garbage collection_1637571.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

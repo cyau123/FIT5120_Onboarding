@@ -1,16 +1,43 @@
 ﻿@model FIT5120_Onboarding.Models.AddressQuery
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Waste Collection Schedule";
 }
 
-@using (Html.BeginForm("Subscribe", "AddressQuery", FormMethod.Post))
-{   
-    <p>Find your next bin collection date</p>
-    <p>Enter your address:</p>
-    @Html.TextBoxFor(model => model.AddressEntered)
-    @Html.ValidationMessageFor(model => model.AddressEntered)
-    <button type="submit">Search</button><br />
-    <p>Next landfill waste collection:</p>@Html.DisplayFor(model => model.NextWasteDate)<br />
-    <p>Next recycling collection:</p>@Html.DisplayFor(model => model.NextRecycleDate)<br />
-    <p>Next food and garden waste collection:</p>@Html.DisplayFor(model => model.NextGreenDate)
-}
+<div class="col-md-6">
+    
+        <h2>Find your next bin collection date</h2><br/><br />
+        <div class="col-md-6", style=" background-color: #F6F8FA">
+            @using (Html.BeginForm("Subscribe", "AddressQuery", FormMethod.Post))
+            {
+                <h4>Enter your address:</h4>
+                @Html.TextBoxFor(model => model.AddressEntered)
+                @Html.ValidationMessageFor(model => model.AddressEntered)
+                <button type="submit">Search</button><br />
+            }
+        </div>
+</div>
+<div class="col-md-6">
+    <h3 style="font-weight: 500">Waste Collection</h3>
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <h4 style="font-weight: 500">Landfill waste</h4>
+            <img src="~/Images/red_small.jpg" />
+            <br />
+            <h5>Collected fornightly</h5>
+            @Html.DisplayFor(model => model.NextWasteDate)
+        </div>
+        <div class="col-md-6">
+            <h4 style="font-weight: 500">Recycling waste</h4>
+            <img src="~/Images/yellow_small.jpg" />
+            <br />
+            <h5>Collected fornightly</h5>
+            @Html.DisplayFor(model => model.NextRecycleDate)
+        </div>
+      </div>
+        <div class="col-md-6">
+            <h4 style="font-weight: 500">Food and Garden Waste</h4>
+            <img src="~/Images/green_small.jpg" />
+            <br />
+            <h5>Collected weekly</h5>@Html.DisplayFor(model => model.NextGreenDate)
+        </div>
+    </div>

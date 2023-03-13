@@ -71,7 +71,7 @@ namespace FIT5120_Onboarding.Controllers
             {
                 nextDate = givenDate;
             }
-            return nextDate.ToString();
+            return nextDate.ToShortDateString();
         }
 
         public string GetNextFornightly(DateTime givenDate)
@@ -95,7 +95,7 @@ namespace FIT5120_Onboarding.Controllers
             {
                 nextDate = givenDate;
             }
-            return nextDate.ToString();
+            return nextDate.ToShortDateString();
         }
 
     }
