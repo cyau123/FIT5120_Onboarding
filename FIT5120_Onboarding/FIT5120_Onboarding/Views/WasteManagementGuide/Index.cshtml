@@ -3,7 +3,6 @@
     ViewBag.Title = "Choose the bin that you would like to learn more about";
 }
 <h2>@ViewBag.Title</h2>
-<h3>@ViewBag.Message</h3>
 <div class="col-md-12">
     <div class="col-md-4">
         <a href="https://localhost:44361/WasteManagementGuide/GreenBin"><img src="~/Images/green bin.JPG" /></a>
@@ -16,15 +15,18 @@
     </div>
 </div>
 <div class="col-md-12">
-    <img src="~/Images/put garbage.JPG" />
-    @using (Html.BeginForm("SearchBin", "WasteManagementGuide", FormMethod.Post))
-    {
-        <p>Find the bin colour</p>
-        <p>Enter garbage type:</p>
+    <h2>Find the waste guide for a specific item</h2>
+    <div class="col-md-6">
+        <img src="~/Images/poeple_rubbish.jpg" />
+    </div>
+    <div class="col-md-6">
+        @using (Html.BeginForm("SearchBin", "WasteManagementGuide", FormMethod.Post))
+        {
+            <h4>What is the item that you are looking for?</h4>
         @Html.TextBoxFor(model => model.GarbageEntered)
         @Html.ValidationMessageFor(model => model.GarbageEntered)
-        <button type="submit">Search</button>
-        <br />
-        <p>Bin colour:</p>@Html.DisplayFor(model => model.BinColour)
-    }
-</div>
+        <button type="submit">Search</button><br />
+        @Html.DisplayFor(model => model.BinColour)
+        }
+    </div>
+    </div>

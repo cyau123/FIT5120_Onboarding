@@ -63,7 +63,7 @@ namespace FIT5120_Onboarding.Controllers
                 }
                 else
                 {
-                    model.BinColour = "Type of garbage cannot be found";
+                    model.BinColour = "Item cannot be found";
                 }
             }
             return View("Index", model);
