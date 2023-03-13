@@ -1,0 +1,153 @@
+﻿.home-make-a-booking {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .home-make-a-booking::before {
+        content: "";
+        background-image: url('../images/homepage.png');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.make-booking-text {
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.text-mid {
+    position: relative;
+    font-size: 30px;
+    left:250px;
+    top:-110px;
+}
+
+.text-large {
+    font-weight:bold;
+    font-size: 40px;
+    position: relative;
+    left: -120px;
+    
+}
+
+.middle-row {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-bookings {
+    position: relative;
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .view-bookings::before {
+        content: "";
+        background-image: url('../images/viewbooking.jpg');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.view-bookings-text {
+    position: relative;
+    color: black;
+    text-align: left;
+}
+
+.our-team {
+    position: relative;
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .our-team::before {
+        content: "";
+        background-image: url('../images/ourteam.jpg');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.our-team-text {
+    position: relative;
+    color: black;
+    text-align: left;
+}
+
+.locations {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .locations::before {
+        content: "";
+        background-image: url('../images/locations.jpg');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.locations-text {
+    position: relative;
+    color: black;
+    text-align: left;
+}
+
+.rounded-button {
+    width: 40px;
+    height: 40px;
+    background: black;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    vertical-align: text-top;
+}
+
+    .rounded-button:hover {
+        background: #18B1BB;
+    }

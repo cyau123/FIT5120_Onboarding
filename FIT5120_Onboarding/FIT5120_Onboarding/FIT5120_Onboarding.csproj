@@ -223,6 +223,8 @@
     <Content Include="Images\—Pngtree—beautiful hand-painted green garbage collection_1637571.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\FIT5120Onboarding20230312154252 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\WasteManagementVictoria - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

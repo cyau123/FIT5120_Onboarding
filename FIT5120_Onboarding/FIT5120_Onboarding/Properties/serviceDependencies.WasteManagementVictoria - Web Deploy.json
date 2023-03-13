@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/fit5120-recyclingdbserver/databases/FIT5120_recycling_db",
+      "type": "mssql.azure",
+      "connectionId": "FIT5120_Models"
+    }
+  }
+}
