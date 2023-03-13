@@ -1,9 +1,20 @@
-﻿@{
+﻿@model FIT5120_Onboarding.Models.GarbageQuery
+@{
     ViewBag.Title = "Choose the bin that you would like to learn more about";
 }
 <h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
-<img src="~/Images/green bin.JPG" />
-<img src="~/Images/red bin.JPG" />
-<img src="~/Images/yellow bin.JPG" />
+<a href="https://localhost:44361/WasteManagementGuide/GreenBin"><img src="~/Images/green bin.JPG" /></a>
+<a href="https://localhost:44361/WasteManagementGuide/RedBin"><img src="~/Images/red bin.JPG" /></a>
+<a href="https://localhost:44361/WasteManagementGuide/YellowBin"><img src="~/Images/yellow bin.JPG" /></a>
+    @using (Html.BeginForm("SearchBin", "WasteManagementGuide", FormMethod.Post))
+    {
+        <p>Find the bin colour</p>
+        <p>Enter garbage type:</p>
+        @Html.TextBoxFor(model => model.GarbageEntered)
+        @Html.ValidationMessageFor(model => model.GarbageEntered)
+        <button type="submit">Search</button>
+        <br />
+        <p>Bin colour:</p>@Html.DisplayFor(model => model.BinColour)
+    }
