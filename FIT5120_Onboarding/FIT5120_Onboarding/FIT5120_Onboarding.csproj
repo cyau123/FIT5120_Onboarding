@@ -206,6 +206,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\green bin.JPG" />
+    <Content Include="Images\homepage.png" />
     <Content Include="Images\logo.JPG" />
     <Content Include="Images\put garbage.JPG" />
     <Content Include="Images\red bin.JPG" />

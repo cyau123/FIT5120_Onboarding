@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FIT5120_Onboarding",
+    "\\FIT5120_Onboarding\\FIT5120_Onboarding",
+    "\\FIT5120_Onboarding\\FIT5120_Onboarding\\Views",
+    "\\FIT5120_Onboarding\\FIT5120_Onboarding\\Views\\WasteManagementGuide",
+    "\\FIT5120_Onboarding\\packages"
   ],
-  "SelectedNode": "\\FIT5120_Onboarding.sln",
+  "SelectedNode": "\\FIT5120_Onboarding\\FIT5120_Onboarding\\Views\\WasteManagementGuide\\GreenBin.cshtml",
   "PreviewInSolutionExplorer": false
 }
