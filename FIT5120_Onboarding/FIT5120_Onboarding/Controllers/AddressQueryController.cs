@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace FIT5120_Onboarding.Controllers
 {
+    [Authorize]
     public class AddressQueryController : Controller
     {
         private FIT5120_Models db = new FIT5120_Models();

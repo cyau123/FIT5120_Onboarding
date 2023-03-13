@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace FIT5120_Onboarding.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()

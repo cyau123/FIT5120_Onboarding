@@ -10,6 +10,7 @@ using FIT5120_Onboarding.Models;
 
 namespace FIT5120_Onboarding.Controllers
 {
+    [Authorize]
     public class SchedulesController : Controller
     {
         private FIT5120_Models db = new FIT5120_Models();
