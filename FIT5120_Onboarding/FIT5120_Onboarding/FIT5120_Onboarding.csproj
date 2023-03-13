@@ -212,6 +212,9 @@
     <Content Include="Images\what-goes-in-waste-bin1.jpg" />
     <Content Include="Images\what-goes-in-waste-bin2.jpg" />
     <Content Include="Images\what-goes-in-waste-bin3.jpg" />
+    <Content Include="Images\what_goes_into_green.jpg" />
+    <Content Include="Images\what_goes_into_red.jpg" />
+    <Content Include="Images\what_goes_into_yellow.jpg" />
     <Content Include="Images\yellow bin.JPG" />
     <Content Include="Images\—Pngtree—beautiful hand-painted green garbage collection_1637571.png" />
     <Content Include="Scripts\bootstrap.js" />

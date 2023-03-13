@@ -19,16 +19,19 @@ namespace FIT5120_Onboarding.Controllers
 
         public ActionResult RedBin()
         {
+            ViewBag.Message = "The landfill bin (red lid) is for any items that cannot be recycled through your recycling bin, food and garden waste bin or other recycling services.";
             return View();
         }
 
         public ActionResult GreenBin()
         {
+            ViewBag.Message = "The organic bin (green lid) is for food scraps, garden prunings and some organic material. The bin is collected every week.";
             return View();
         }
 
         public ActionResult YellowBin()
         {
+            ViewBag.Message = "The recycling bin (yellow lid) is for common household packaging items typically bought at a supermarket and found in your kitchen, bathroom or laundry.";
             return View();
         }
 

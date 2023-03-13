@@ -4,10 +4,19 @@
 }
 <h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
-
-<a href="https://localhost:44361/WasteManagementGuide/GreenBin"><img src="~/Images/green bin.JPG" /></a>
-<a href="https://localhost:44361/WasteManagementGuide/RedBin"><img src="~/Images/red bin.JPG" /></a>
-<a href="https://localhost:44361/WasteManagementGuide/YellowBin"><img src="~/Images/yellow bin.JPG" /></a>
+<div class="col-md-12">
+    <div class="col-md-4">
+        <a href="https://localhost:44361/WasteManagementGuide/GreenBin"><img src="~/Images/green bin.JPG" /></a>
+    </div>
+    <div class="col-md-4">
+        <a href="https://localhost:44361/WasteManagementGuide/RedBin"><img src="~/Images/red bin.JPG" /></a>
+    </div>
+    <div class="col-md-4">
+        <a href="https://localhost:44361/WasteManagementGuide/YellowBin"><img src="~/Images/yellow bin.JPG" /></a>
+    </div>
+</div>
+<div class="col-md-12">
+    <img src="~/Images/put garbage.JPG" />
     @using (Html.BeginForm("SearchBin", "WasteManagementGuide", FormMethod.Post))
     {
         <p>Find the bin colour</p>
@@ -18,3 +27,4 @@
         <br />
         <p>Bin colour:</p>@Html.DisplayFor(model => model.BinColour)
     }
+</div>
