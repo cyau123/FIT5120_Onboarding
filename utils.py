@@ -60,6 +60,19 @@ def df_userstory2(path):
         else:
             df[col] = df[col].str.upper()
 
+    df['STREET'] = df['ADDRESS'].str.extract(
+        r'^(.*)\s+VIC\s+\d{4}$', expand=False)
+    df['POST_CODE'] = df['ADDRESS'].str.extract(
+        r'^.*\s+VIC\s+(\d{4})$', expand=False)
+
+    df = df.drop(columns=['ADDRESS'])
+
+    df = list(map(lambda vars: df[["PROPNUM"] + [*vars]],
+                  [["COLLECTIONDAY", "NEXTWASTE", "NEXTRECYCLE",  "NEXTGREEN"],
+                   ["STREET"],
+                   ["POST_CODE"]]
+                  ))
+
     return df
 
 
@@ -110,3 +123,10 @@ df = pd.read_sql("SELECT * FROM US_2_2", sql_connection)
 sql_connection.close()
 # df.dtypes
 # df.to_csv("kk.csv")
+
+df = df_userstory2("us_2_2.csv")
+
+list(map(lambda df, csv_name: df.to_csv(f"{csv_name}.csv"),
+         df,
+         ["MAIN", "STREET", "POST_CODE"]
+         ))
